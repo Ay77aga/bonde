@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bootstrap</title>
+  <!-- <css fills> -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- <custom css> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- <font> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md sticky-top p-1">
+    <div class="container">
+      <img src="imgs/logo.png" alt="logo">
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto pt-3 pb-3">
+          <li><a class="nav-link p-2 active" href="#home">Home</a></li>
+          <li><a class="nav-link p-2" href="#service">Service</a></li>
+          <li><a class="nav-link p-2" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link p-2" href="#about">About</a></li>
+          <li><a class="nav-link p-2" href="#contact">Contact</a></li>
+        </ul>
+        <div class="search position-relative me-3">
+          <input class="p-1 " placeholder="Search:" type="text">
+          <i class="fa-solid fa-magnifying-glass ps-2"></i>
+        </div>
+        <a href="#" class="d-block login ms-5"><button class="btn btn-primary shadow ps-4 pe-4">Login</button></a>
+      </div>
+    </div>
+  </nav>
+  <section id="home" class="landing d-flex justify-content-center align-items-center">
+    <div class="container text-center text-light">
+      <h1>Taste the Creativity</h1>
+      <p class="text-white-50 fs-6">We make awesome graphic and web design</p>
+      <a href="#" class="d-block m-auto mt-4"><button class="btn fs-3 btn-primary shadow ps-4 pe-4 rounded-4">Sing Up</button></a>
+    </div>
+  </section>
+  <section id="service" class="feature text-center pt-5 pb-5">
+    <div class="container">
+      <div class="sp-title position-relative">
+        <i class="fa-solid fa-code-merge fa-5x mb-3"></i>
+        <h1>We are Good at</h1>
+        <p class="text-uppercase text-black-50 fs-6">Some Of These Stuff Under</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="icons position-relative ">
+            <i class="fa-solid fa-1 position-absolute bottom-0 num"></i>
+            <i class="fa-solid fa-pencil position-absolute bottom-0 icon"></i>
+          </div>
+          <div class="data">
+            <h4 class="text-uppercase mt-3 mb-3">Graphic design</h4>
+            <p class="text-black-50 lh-lg">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4  mb-5">
+          <div class="icons position-relative ">
+            <i class="fa-solid fa-2 position-absolute bottom-0 num"></i>
+            <i class="fa-solid fa-tv position-absolute bottom-0 icon"></i>
+          </div>
+          <div class="data">
+            <h4 class="text-uppercase mt-3 mb-3">Web design</h4>
+            <p class="text-black-50 lh-lg">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="icons position-relative ">
+            <i class="fa-solid fa-3 position-absolute bottom-0 num"></i>
+            <i class="fa-solid fa-laptop-code position-absolute bottom-0 icon"></i>
+          </div>
+          <div class="data">
+            <h4 class="text-uppercase mt-3 mb-3">App development</h4>
+            <p class="text-black-50 lh-lg">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="our-works pt-5 pb-5">
+    <div class="container text-center">
+      <div class="sp-title position-relative">
+        <i class="fa-solid fa-code-merge fa-5x mb-3"></i>
+        <h1>We Make This</h1>
+        <p class="text-uppercase text-black-50 fs-6">Prepare Be To Amazing</p>
+      </div>
+      <!-- <filter> -->
+      <ul class="fs-5 list-unstyled d-flex justify-content-center m-5">
+        <li class=" active">All</li>
+        <li>Design</li>
+        <li>App</li>
+        <li>Photos</li>
+      </ul>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div data-info="app" class="box mb-3 bg-white">
+            <img class="img-fluid" src="imgs/design1.png" alt="design">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div data-info="app" class="box mb-3 bg-white">
+            <img class="img-fluid" src="imgs/design2.png" alt="design">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div data-info="app" class="box mb-3 bg-white">
+            <img class="img-fluid" src="imgs/design3.png" alt="design">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div data-info="design" class="box mb-3 bg-white">
+            <img class="img-fluid" src="imgs/design4.png" alt="design">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div data-info="design" class="box mb-3 bg-white">
+            <img class="img-fluid" src="imgs/design5.png" alt="design">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div data-info="design" class="box mb-3 bg-white">
+            <img class="img-fluid" src="imgs/design6.png" alt="design">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div data-info="photo" class="box mb-3 bg-white">
+            <img class="img-fluid" src="imgs/design7.png" alt="design">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div data-info="photo" class="box mb-3 bg-white">
+            <img class="img-fluid" src="imgs/design8.png" alt="design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stufe">
+    <div class="container">
+      <div class="sp-title position-relative text-center">
+        <i class="fa-solid fa-code-merge fa-5x mb-3"></i>
+        <h1>Some Stuff About Us</h1>
+        <p class="text-uppercase text-black-50 fs-6">The Great Team</p>
+      </div>
+      <p class="disc text-center text-black-50 lh-base">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+      <div class="row mt-5">
+        <div class=" col-lg-4 text-center text-lg-start mt-5">
+          <h3>Retina Design</h3>
+          <p class="text-black-50 lh-base ">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+          <p class="text-black-50 lh-base">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+          <a href="#" class="d-block m-auto mt-4 mb-4">
+            <button class="btn fs-3 btn-primary shadow ps-4 pe-4 rounded-4">ORDER ME ONE</button>
+          </a>
+        </div>
+        <div class="col-lg-8">
+          <img class="img-fluid" src="imgs/laptop.png" alt="laptop">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="team pt-5 pb-5">
+    <div class="container pt-5 pb-5">
+      <div class="text-center">
+        <h1 class="fw-bold">Meet The Team</h1>
+        <p class="text-black-50 lh-base">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada</p>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col-md-4 col-lg-3 text-center">
+          <div class="box bg-white">
+            <img class="img-fluid" src="imgs/team-1.jpg" alt="team">
+            <h3 class="fw-bold pt-3 pb-3">Lorem Ipsum</h3>
+            <p class="text-black-50 p-2">I don't understand how we got by those troops. I thought we were dead.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 text-center">
+          <div class="box bg-white">
+            <img class="img-fluid" src="imgs/team-1.jpg" alt="team">
+            <h3 class="fw-bold pt-3 pb-3">Lorem Ipsum</h3>
+            <p class="text-black-50 p-2">I don't understand how we got by those troops. I thought we were dead.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 text-center">
+          <div class="box bg-white">
+            <img class="img-fluid" src="imgs/team-1.jpg" alt="team">
+            <h3 class="fw-bold pt-3 pb-3">Lorem Ipsum</h3>
+            <p class="text-black-50 p-2">I don't understand how we got by those troops. I thought we were dead.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 text-center">
+          <div class="box bg-white">
+            <img class="img-fluid" src="imgs/team-1.jpg" alt="team">
+            <h3 class="fw-bold pt-3 pb-3">Lorem Ipsum</h3>
+            <p class="text-black-50 p-2">I don't understand how we got by those troops. I thought we were dead.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <scripts> -->
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

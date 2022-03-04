@@ -113,6 +113,27 @@ nav {
 
 }
 
+.filter .all:not(.active) {
+  display: none;
+  transform: scale(0);
+}
+
+.filter .active {
+  animation: pp .5s both;
+}
+
+@keyframes pp {
+  0% {
+    display: none;
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    display: block
+  }
+}
+
 .our-works {
   background-color: var(--section);
 }
@@ -169,11 +190,6 @@ nav {
 .stufe .container>p {
   max-width: 500px;
   margin: auto;
-}
-
-.s-img {
-  position: relative;
-  bottom: 0;
 }
 
 .team {
@@ -235,7 +251,7 @@ nav {
   color: #fff;
 }
 
-.sub [type=email] {
+.sub [type=text] {
   border: none;
   border-bottom: 2px solid #fff;
   color: #fff;
@@ -259,34 +275,75 @@ nav {
 footer {
   background: var(--dark);
 }
-footer ul li a{
-    color: rgba(255,255,255,.5);
-text-decoration: none;
+
+footer ul li a {
+  color: rgba(255, 255, 255, .5);
+  text-decoration: none;
 }
+
 footer ul li {
-  padding: 1.rem  0;
+  padding: 1.rem 0;
 }
-.creat span{
+
+.creat span {
   font-weight: bold;
 }
-.creat span:first-child{
+
+.creat span:first-child {
   color: var(--green);
 }
-.creat span:last-child{
+
+.creat span:last-child {
   color: var(--blue);
 }
+
 .contact li:first-child {
   background: var(--blue);
 }
-.contact li:nth-child(2){
+
+.contact li:nth-child(2) {
   background: #000;
 }
+
 .contact li:last-child {
   background: #2A99D2;
 }
-.contact li a{
+
+.contact li a {
   color: #fff;
 }
+
+.err {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background: red;
+  color: #fff;
+  text-align: center;
+  width: fit-content;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.top {
+  position: fixed;
+  background-color: var(--blue);
+  color: #fff;
+  padding: 5px;
+  transition: .5s;
+  z-index: 1899;
+  top: 0;
+  transform: translateY(-100%);
+  border-radius: 0 50% 0 50%;
+}
+
+.top.show {
+  right: 20px;
+  top: calc(100% - 20px);
+}
+
 @media (max-width: 767px) {
   .search input {
     width: 200px;

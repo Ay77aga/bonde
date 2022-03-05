@@ -47,9 +47,21 @@ window.addEventListener('scroll', () => {
   }
   else
     top_div.classList.remove('show');
+
+
+
 });
 top_div.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
   });
 });
+let ds = document.querySelectorAll('.row div,.box');
+let title = document.querySelectorAll('.sp-title');
+ds.forEach((section, i) => {
+    section.setAttribute('data-aos', 'fade-right');
+});
+title.forEach(t=>{
+  t.setAttribute('data-aos','zoom-in-up')
+});
+
